@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Web Calendar</title>
+  <link rel='stylesheet' href='css/webcal.css' type='text/css'>
+</head>
+<body>
+  <br><br>
+  <table id="outer">  <!-- 3x4 table containing 12-month calendar -->
+    <tr>
+      <td class='month'></td> <td class='month'></td>
+      <td class='month'></td> <td class='month'></td>
+    </tr>
+    <tr>
+      <td class='month'></td> <td class='month'></td>
+      <td class='month'></td> <td class='month'></td>
+    </tr>
+    <tr>
+      <td class='month'></td> <td class='month'></td>
+      <td class='month'></td> <td class='month'></td>
+    </tr>
+  </table>
+  <br>
+  <table id="iface">  <!-- 1x3 table containing gui controls -->
+    <tr>
+      <td><button type='button' id='set'>SET YEAR</button></td>
+      <td>
+        <div>
+          <button type='button' id='minus'><</button>
+          <input type='text' id='year'></input>
+          <button type='button' id='plus'>></button>
+        </div>
+      </td>
+      <td><button type='button' id='usage'>USAGE</button></td>
+    </tr>
+  </table>
+  <script src='js/webcal.js' type='text/javascript'></script>
+</body>
+</html>
+

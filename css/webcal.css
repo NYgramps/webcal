@@ -1,0 +1,125 @@
+body
+  {
+  background-color: #303030;
+  }
+#outer     /* layout of table containing all monthly calendars */
+/*
+*     --- center the table containing the annual calendar ---
+*/
+  {
+  width: 80%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+#outer td
+  {
+  border: 1px solid #FFF;
+  border: none;     /* comment out to draw cell borders */
+  }
+.inner              /* typical table container of an monthly calendar */
+  {
+  width: 100%;
+  text-align: center;
+/*
+*     --- use fixed-width font to ensure table columns of equal width ---
+*/
+  font-family: "Courier New",monospace;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  }
+.dayname
+  {
+  font-style: italic;
+  color: gold;
+  }
+.inner td
+  {
+  border: 1px solid #FFF;
+  border: none;     /* comment out to draw cell borders */
+  }
+.weekday
+  {
+  color: gold;
+  }
+.weekend
+  {
+  color: #00bfff
+  }
+.span
+  {
+  font-family: georgia,times,serif;
+  font-style: italic;
+  font-size: medium;
+  text-align: center;
+  color: #303030;
+  background-color: #5F9EA0;
+  }
+#today
+  {
+  font-family: arial,geneva,serif;
+  font-style: italic;
+  font-size: small;
+  color: purple;
+  background-color: orange;
+  }
+#iface     /* table containing user-interface controls */
+  {
+  width: 85%;
+  height: 50px;
+/*background-color: white;   # useful for adjusting presentation */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  }
+#iface button
+  {
+  font-family: georgia,geneva,serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.2em;
+  color: gold;
+  background-color: #777777;
+  height: 40px;
+  }
+#set, #usage
+  {
+  width: 160px;
+  border-radius: 20px;
+  border-width: 0px;
+  }
+#minus
+  {
+  width: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-width: 0px;
+  margin-right: -4px;
+  }
+#plus
+  {
+  width: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-width: 0px;
+  margin-left: -4px;
+  }
+#year
+  {
+  font-family: times;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.4em;
+  background-color: orange;
+  color: purple;
+  text-align: center;
+  width: 70px;
+  border-width: 0px;
+/*
+*   Adjustments below needed to make 'input' html5 element line up
+*   with 'button' element due to differences in default settings
+*/
+  height: 38px;       /* not expected 40px */
+  margin-top: -1px;
+  }
